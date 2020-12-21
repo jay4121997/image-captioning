@@ -41,11 +41,7 @@ You can download the dataset from the link below
 
 There should be one image with the name example1.jpg as shown in folder structure.
 
-**Folder Structure:**
 
-![](RackMultipart20201221-4-1itdtlu_html_d3253e7f7bc4a5be.png)
-
-![](RackMultipart20201221-4-1itdtlu_html_e438f7424584e647.png)
 
 **Run the code** :
 
