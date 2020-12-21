@@ -1,0 +1,60 @@
+Folder PATH listing for volume Data
+Volume serial number is 68C0-BC71
+D:.
+|   api.py
+|   descriptions.txt
+|   example1.jpg
+|   ImageFeatures.pkl
+|   project_pr.py
+|   requirements.txt
+|   tokenizer.pkl
+|   
++---Flicker8k_Dataset
+|       1000268201_693b08cb0e.jpg
+|       1001773457_577c3a7d70.jpg
+|       1002674143_1b742ab4b8.jpg
+|       1003163366_44323f5815.jpg
+|       1007129816_e794419615.jpg
+|       1007320043_627395c3d8.jpg
+|       1009434119_febe49276a.jpg
+.......................
+......................
+|       
++---Flickr8k_text
+|   |   CrowdFlowerAnnotations.txt
+|   |   ExpertAnnotations.txt
+|   |   Flickr8k.lemma.token.txt
+|   |   Flickr8k.token.txt
+|   |   Flickr_8k.devImages.txt
+|   |   Flickr_8k.testImages.txt
+|   |   Flickr_8k.trainImages.txt
+|   |   readme.txt
+|   |   
+|   \---__MACOSX
+|           ._Flickr8k.lemma.token.txt
+|           
++---modals_new
+|       model_0.h5
+|       model_1.h5
+|       model_10.h5
+|       model_11.h5
+|       model_12.h5
+|       model_13.h5
+|       model_14.h5
+|       model_15.h5
+|       model_16.h5
+|       model_17.h5
+|       model_18.h5
+|       model_19.h5
+|       model_2.h5
+|       model_3.h5
+|       model_4.h5
+|       
++---templates
+|       index copy 2.html
+|       index copy.html
+|       index.html
+|       
+\---uploads
+        example1.jpg
+        

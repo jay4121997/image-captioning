@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>File Upload</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  </head>
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+    html {
+      box-sizing: border-box;
+    }
+
+    *,
+    *::after,
+    *::before {
+      box-sizing: inherit;
+    }
+
+    body {
+      background: #f6f4f3;
+    }
+
+    h1 {
+      text-align: center;
+      font-family: "Open sans";
+      color: #4eafd7;
+    }
+
+    .card-wrapper {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .card-wrapper::after {
+      clear: both;
+      content: "";
+      display: block;
+    }
+    .card-wrapper .card {
+      float: left;
+      display: block;
+      margin-right: 2.3576520234%;
+      width: 82.9403913294%;
+      margin-left: 8.5298043353%;
+      position: relative;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      background: #fff;
+      height: auto;
+      box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+    }
+    .card-wrapper .card:last-child {
+      margin-right: 0;
+    }
+    .card-wrapper .card .card-img {
+      background: url({{files}});
+      float: left;
+      display: block;
+      margin-right: 2.3576520234%;
+      width: 31.7615653177%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-position: center center;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+    }
+    .card-wrapper .card .card-img:last-child {
+      margin-right: 0;
+    }
+    .card-wrapper .card .card-text {
+      float: left;
+      display: block;
+      margin-right: 2.3576520234%;
+      width: 65.8807826589%;
+      box-sizing: borderbox;
+      padding: 30px 15px;
+      float: right;
+    }
+    .card-wrapper .card .card-text:last-child {
+      margin-right: 0;
+    }
+    .card-wrapper .card .card-text .card-title {
+      font-size: 22px;
+      font-weight: 600;
+      font-family: "Open Sans", sans-serif;
+      color: #f54b43;
+    }
+    .card-wrapper .card .card-text .card-description {
+      font-size: 18px;
+      margin-top: 15px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 100;
+    }
+    .card-wrapper .card .card-text .card-description .more-link {
+      position: relative;
+      background: #f54b43;
+      padding: 20px 20px;
+      border-radius: 50%;
+      float: right;
+      margin: 15px 15px 0 15px;
+      text-decoration: none;
+      overflow: hidden;
+      box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.35);
+      cursor: pointer;
+    }
+    .card-wrapper .card .card-text .card-description .more-link i:nth-child(1) {
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      transition: 0.3s;
+      color: #fff;
+      position: absolute;
+      top: 11px;
+      left: -45px;
+    }
+    .card-wrapper .card .card-text .card-description .more-link i:nth-child(2) {
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      transition: 0.3s;
+      color: #fff;
+      position: absolute;
+      top: 12px;
+      left: 13px;
+    }
+    .card-wrapper .card .card-text .card-description .more-link:hover {
+      background: #f4342b;
+    }
+    .card-wrapper
+      .card
+      .card-text
+      .card-description
+      .more-link:hover
+      i:nth-child(1) {
+      left: 12px;
+    }
+    .card-wrapper
+      .card
+      .card-text
+      .card-description
+      .more-link:hover
+      i:nth-child(2) {
+      left: 45px;
+    }
+
+    @media screen and (max-width: 767px) {
+      .card-wrapper .card {
+        float: left;
+        display: block;
+        margin-right: 2.3576520234%;
+        width: 82.9403913294%;
+        margin-left: 8.5298043353%;
+        height: auto;
+      }
+      .card-wrapper .card:last-child {
+        margin-right: 0;
+      }
+      .card-wrapper .card .card-img {
+        width: 100%;
+        height: 295px;
+        position: relative;
+      }
+      .card-wrapper .card .card-text {
+        width: 100%;
+      }
+    }
+  </style>
+  <body>
+    <!-- <img src={{"../uploads/"+files}} alt='error'>
+    <p>Caption : {{caption}}</p> -->
+
+    <div class="card-wrapper">
+      <div class="card">
+        <div class="card-img"></div>
+        <div class="card-text">
+          <div class="card-title">Image Captions</div>
+          <div class="card-description">
+            Caption 1: {{caption1}}
+            <br>
+            <br>
+            Caption 2: {{caption2}}
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
